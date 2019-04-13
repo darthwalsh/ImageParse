@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <PackageId>ImageParse</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Carl Walsh and contributors</Authors>
+    <Description>Library to help debug image parsing code</Description>
+    <Copyright>Copyright (c) Carl Walsh and contributors.</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/darthwalsh/ImageParse</PackageProjectUrl>
+    <PackageTags>Image Parse Bitmap Core</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/darthwalsh/ImageParse</RepositoryUrl>
+    
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
