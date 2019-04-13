@@ -12,7 +12,7 @@ namespace ImageParse
             this.image = image;
         }
 
-        async Task<Point> FindColor(Point p, Color color, Func<Point, Point> nextPoint)
+        public async Task<Point> FindColor(Point p, Color color, Func<Point, Point> nextPoint)
         {
             for (; 0 <= p.Y && p.Y < image.Height && 0 <= p.X && p.X < image.Height; p = nextPoint(p))
             {

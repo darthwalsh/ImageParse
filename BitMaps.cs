@@ -23,8 +23,7 @@ namespace ImageParse
         public virtual Task<Color> GetPixel(Point p) => IAsyncBitmap.GetPixel(p);
     }
 
-    //TODO Should everything use .ConfigureAwait(false) ?
-    class DelayedBitmap : DelgatingAsyncBitmap
+    public class DelayedBitmap : DelgatingAsyncBitmap
     {
         Stopwatch stopwatch = Stopwatch.StartNew();
         int count;
